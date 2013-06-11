@@ -13,7 +13,7 @@ namespace CSharpExampleConsoleApp
         static void Main(string[] args)
         {
             Program programInstance = new Program();
-
+            
             programInstance.bindEvents();
             programInstance.startConnection();
             programInstance.requestData();
@@ -29,6 +29,7 @@ namespace CSharpExampleConsoleApp
 
         private void startConnection()
         {
+            Console.WriteLine("Connecting...");
             Tws1.connect("", 7496, 1);
         }
 
